@@ -7,15 +7,23 @@ import "./Contact.css";
         nameavatar: "Jules",
         online: true ,
     
+    
     }
      render() { 
-        return ( <div className="Contact"> 
-            <div className="avatar"> </div>
-            <div className="name">{this.state.nameavatar}</div>
-            <div className="status">
-                <div className="status-online status-offline "> </div>
+
+        return ( <div className={this.props.star?"Contact1":"Contact"}> 
+            <div className="avatar"> <img src={this.props.image?"this.props.image":"https://www.drupal.org/files/issues/default-avatar.png"}></img> 
             </div>
+            <div className={this.props.star?"name1":"name"}>{this.state.nameavatar}</div>{" "}
+            <div className={this.onlineOffline()}></div>
+            <div className="status-text"> {this.onlineOffline()}</div>
         </div> ) ;
+     }
+
+     onlineOffline () { 
+
+        return this.state.online?"Online":"Offline" ;
+
      }
  }
   
