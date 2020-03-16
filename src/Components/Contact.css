@@ -64,3 +64,10 @@
   .Contact  .Offline {
     background: red;
   }
+
+  img {
+
+    height: 30px ;
+    transform: translate(-13%, 0); 
+
+  }
