@@ -4,7 +4,8 @@ import "./Contact.css";
  class Contact extends Component {
      state = { 
          
-        nameavatar: "Jules",
+        name: "Jules",
+        avatar: "https://pbs.twimg.com/profile_images/1146769873374240770/e6Ia45_i_400x400.jpg",
         online: true ,
     
     
@@ -12,7 +13,7 @@ import "./Contact.css";
      render() { 
 
         return ( <div className={this.props.star?"Contact1":"Contact"}> 
-            <div className="avatar"> <img src= "https://pbs.twimg.com/profile_images/1146769873374240770/e6Ia45_i_400x400.jpg"></img> 
+            <div className="avatar"> <img src= {this.avatar}></img> 
             </div>
             <div className={this.props.star?"name1":"name"}>{this.state.nameavatar}</div>{" "}
             <div className={this.onlineOffline()}></div>
