@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import Contact from './Contact.js'
+import Contact from "./Contact.js";
+import "./Contact.css";
 
 let users = [
   {
@@ -33,11 +34,18 @@ class ContactList extends Component {
   state = {};
 
   render() {
-    let x = 0;
+    
+    console.log(users)
 
-    for (x = 0; x < users.map.length; x++) {
-      return <Contact name={users[x].name} />;
-    }
+    return <div>{users.map(this.iterateContact)}</div>;
+  }
+
+  iterateContact(person) {
+
+    console.log (person.name) ;
+    console.log (person.avatar) ;
+
+     return <Contact name={person.name} avatar={person.avatar} />;
   }
 }
 export default ContactList;

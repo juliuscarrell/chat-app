@@ -11,7 +11,7 @@ import "./Contact.css";
     }
      render() { 
 
-        return ( <div className={this.props.star?"Contact1":"Contactgit"}> 
+        return ( <div className="Contact"> 
             <div className="avatar"> <img src= {this.props.avatar}></img> 
             </div>
             <div className={this.props.star?"name1":"name"}>{this.props.name}</div>{" "}
