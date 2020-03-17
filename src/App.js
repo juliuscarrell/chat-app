@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import Contact from './Components/Contact'
+import ContactList from "./Components/ContactList.jsx";
 import './App.css';
 
 class App extends Component {
@@ -8,7 +9,7 @@ class App extends Component {
     return (
       <div className="App" >
         
-          <Contact image="" star={false} />
+          <ContactList />
         
        
       </div>

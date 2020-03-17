@@ -8,14 +8,13 @@ import "./Contact.css";
         avatar: "https://pbs.twimg.com/profile_images/1146769873374240770/e6Ia45_i_400x400.jpg",
         online: true ,
     
-    
     }
      render() { 
 
-        return ( <div className={this.props.star?"Contact1":"Contact"}> 
-            <div className="avatar"> <img src= {this.avatar}></img> 
+        return ( <div className={this.props.star?"Contact1":"Contactgit"}> 
+            <div className="avatar"> <img src= {this.props.avatar}></img> 
             </div>
-            <div className={this.props.star?"name1":"name"}>{this.state.nameavatar}</div>{" "}
+            <div className={this.props.star?"name1":"name"}>{this.props.name}</div>{" "}
             <div className={this.onlineOffline()}></div>
             <div className="status-text"> {this.onlineOffline()}</div>
         </div> ) ;
