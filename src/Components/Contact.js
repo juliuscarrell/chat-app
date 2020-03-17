@@ -14,7 +14,7 @@ import "./Contact.css";
         return ( <div className={this.props.star?"Contact1":"Contact"}> 
             <div className="avatar"> <img src= {this.state.avatar}></img> 
             </div>
-            <div className={this.props.star?"name1":"name"}>{this.state.nameavatar}</div>{" "}
+            <div className={this.props.star?"name1":"name"}>{this.state.name}</div>{" "}
             <div className={this.onlineOffline()}></div>
             <div className="status-text"> {this.onlineOffline()}</div>
         </div> ) ;
